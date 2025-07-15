@@ -1,0 +1,23 @@
+/* src/index.css */
+
+/* Tailwind CSS directives for v3.x. These are processed by PostCSS to inject Tailwind's styles. */
+@tailwind base;       /* Includes Tailwind's Preflight for consistent base styles */
+@tailwind components; /* Includes Tailwind's component classes */
+@tailwind utilities;  /* Includes all of Tailwind's utility classes */
+
+/* Global base styles for your application. These apply to the entire document. */
+
+html,
+body,
+#root {
+  height: 100%; /* Ensures the root elements take full viewport height */
+  margin: 0;   /* Removes default browser margins */
+  padding: 0;  /* Removes default browser padding */
+  /* Set a black background for the body. */
+  background-color: #000; 
+  /* Smooth scrolling behavior for anchor links (if you add them later) */
+  scroll-behavior: smooth;
+  
+  /* --- ADD THIS LINE TO SET GLOBAL TEXT COLOR TO WHITE --- */
+  color: #fff; /* Sets default text color to white */
+}
